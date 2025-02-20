@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My weather application</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <form action="city" id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city"
+          required
+          id="search-input"
+        />
+        <input type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">Lisbon</h1>
+          <p>
+            <span id="current-date"></span>, moderate rain
+            <br />
+            Humidity: <strong>86%</strong>, Wind: <strong>7,3km/h</strong>
+          </p>
+          <div class="current-temperature">
+            <span class="temperature-icon">🌤</span>
+            <span class="current-temperature-value" id="current-temperature"
+              >14</span
+            >
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="forecast-weather">
+        <ul>
+          <li>
+            Sat 🌥
+            <br />
+            14°C - 18°C
+          </li>
+          <li>
+            Sun 🌥
+            <br />
+            14°C - 18°C
+          </li>
+          <li>
+            Mon 🌥
+            <br />
+            14°C - 18°C
+          </li>
+          <li>
+            Tue 🌥
+            <br />
+            14°C - 18°C
+          </li>
+          <li>
+            Wed 🌥
+            <br />
+            14°C - 18°C
+          </li>
+          <li>
+            Thu 🌥
+            <br />
+            14°C - 18°C
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>This project was coded by <a href="#">Micaela Fonseca</a></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
